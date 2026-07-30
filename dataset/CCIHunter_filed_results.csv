@@ -1,0 +1,10 @@
+index,address,contract,function,result,label
+1,0x04a159fca7c1ab6a888d815b814e14b4aad9582c,TransparentUpgradeableProxy,admin,1,0
+2,0x04a159fca7c1ab6a888d815b814e14b4aad9582c,TransparentUpgradeableProxy,implementation,1,0
+3,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,safeTransferFrom,1,1
+4,0xdfdbcb2bb502f5e091a1651ffa680bfd40d824ab,ERC721,safeTransferFrom,1,1
+5,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,setApprovalForAll,1,1
+6,0x3b9daeeccd06ddc71b75b8126572d439563d9ab9,Collector,setFundsAdmin,1,0
+7,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,transferFrom,1,1
+8,0x681608c93c587424b017efe2fc646d0cfbb3268f,ECDSA,tryRecover,1,1
+9,0x83b7ce402a0e756e901c4a9d1cafa27ca9572afc,Collector,createStream,1,1

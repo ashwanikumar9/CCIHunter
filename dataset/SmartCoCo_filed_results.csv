@@ -1,0 +1,29 @@
+index,address,contract,function,type,label,inconsistency
+1,0x200f33eB8B78C553794f7eD9C68358d26bEaE881,RealtyCoin,_approve,require,related to if statement,"    RealtyCoin ?_approve ? ?require ['NEQ', 'owner', '0'] ? 0 ? []"
+2,0x65B5c11058c170d94793e1d8A43B04602560401C,RippleUSDToken,_transfer,require,fail to extract code fact,"    RippleUSDToken ?_transfer ? require ['GEQ', 'sender', 'yoursold'] ? 5 ? []"
+3,0xa8a9f36935ad461516306ded2218ff2673daec7b,ERC20,_transfer,require,fail to extract code fact,"    ERC20 ? _transfer ? require ['GEQ', 'sender', 'amount'] 5 ? []"
+4,0x9a523460c15029fd257505ea4b360e8720e48a9a,ERC721A,_transfer,require,related to if statement,"    ERC721A _transfer ? require ['NEQ', 'to', '0'] ?0 ? []"
+5,0x3fe0faa5c380461e38cc12dff95f34227ae98a8b,ConfirmedOwnerWithProposal,_transferOwnership,event,Rigid matching,"    ConfirmedOwnerWithProposal ?_transferOwnership ?event ? relevant ? ?5 ? [['Emit', 'ConfirmedOwnerWithProposal', '_transferOwnership', 'OwnershipTransferRequested', '$Bool(True)', None, None]]"
+6,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadProxy,admin,role,1,    RadProxy ? ?admin ? role ? ?admin ? 0 ? []
+7,0xbdf43ecadc5cef51b7d1772f722e40596bc1788b,OFTImplementation,approvalRequired,role,Language comprehension,    OFTImplementation ? approvalRequired ? ?role ? ?things ?0 ? []
+8,0x200f33eB8B78C553794f7eD9C68358d26bEaE881,RealtyCoin,approve,require,related to if statement,"    RealtyCoin ?approve require ['NEQ', 'spender', '0'] 0 ? []"
+9,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadCollectionNftContract,balanceOfBatch,require,related to if statement,"    RadCollectionNftContract ? ?balanceOfBatch ?require ['EQ', 'accounts.length', 'ids.length'] 0 ? []"
+10,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadProxy,implementation,role,1,    RadProxy ? ?implementation ?role ? ?admin ? 0 ? []
+11,0x928855b2c73a3574684fe7a4d55ae8bae212c92f,Legend,permit,require,related to if statement,"    Legend ?permit ?require ['NEQ', 'spender', '0'] 0 ? []"
+12,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadCollectionNftContract,safeBatchTransferFrom,require,1,"    RadCollectionNftContract ? ?safeBatchTransferFrom ? require ['EQ', 'ids.length', 'values.length'] ? 0 ? []"
+13,0xdfdbcb2bb502f5e091a1651ffa680bfd40d824ab,GMANFT,safeTransferFrom,require,related to if statement,"    GMANFT ?safeTransferFrom ? ?require ['NEQ', 'to', '0'] ?0 ? []"
+13,0xdfdbcb2bb502f5e091a1651ffa680bfd40d824ab,GMANFT,safeTransferFrom,require,1,"    GMANFT ?safeTransferFrom ? ?require ['NEQ', 'from', '0'] ? ?0 ? []"
+14,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadCollectionNftContract,safeTransferFrom,require,related to if statement,"    RadCollectionNftContract ? ?safeTransferFrom ? ?require ['NEQ', 'to', '0'] ?0 ? []"
+14,0x1563e40e78f76cf1e651ff8953d4e2d95a107ab7,RadCollectionNftContract,safeTransferFrom,require,related to if statement,"    RadCollectionNftContract ? ?safeTransferFrom ? ?require ['GEQ', 'from', 'value amount'] 0 ? []"
+15,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,safeTransferFrom,require,1,"    ERC721A safeTransferFrom ? ?require ['NEQ', 'from', '0'] ? ?0 ? []"
+15,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,safeTransferFrom,require,related to if statement,"    ERC721A safeTransferFrom ? ?require ['NEQ', 'to', '0'] ?0 ? []"
+15,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,safeTransferFrom,event,Assembly Language,    ERC721A safeTransferFrom ? ?event ? {Transfer} ?0 ? []
+16,0xdfdbcb2bb502f5e091a1651ffa680bfd40d824ab,GMANFT,setApprovalForAll,require,related to if statement,"    GMANFT ?setApprovalForAll ? require ['NEQ', 'operator', '0'] ? ?0 ? []"
+17,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,setApprovalForAll,require,1,"    ERC721A setApprovalForAll ? require ['NEQ', 'operator', 'caller'] ? 0 ? []"
+18,0x9a523460c15029fd257505ea4b360e8720e48a9a,ERC721A,setApprovalForAll,require,related to if statement,"    ERC721A setApprovalForAll ? require ['NEQ', 'operator', 'caller'] ? 5 ? [['Require', 'ERC721A', 'setApprovalForAll', ""['EQ', 'operator', '_msgSender()']"", 'None', None, None]]"
+19,0x0d40363a2e81d8156b2a79a4a18e279bFf6F511C,SupplyLimitModule,setSupplyLimit,role,Rigid matching,"    SupplyLimitModule ? setSupplyLimit ?role ? ?owner ? 5 ? [['FnHasMod', 'SupplyLimitModule', 'setSupplyLimit', 'onlyComplianceCall', None, None, None]]"
+20,0x200f33eB8B78C553794f7eD9C68358d26bEaE881,RealtyCoin,transfer,require,related to if statement,"    RealtyCoin ?transfer ? ?require ['NEQ', 'to', '0'] ?0 ? []"
+21,0x65B5c11058c170d94793e1d8A43B04602560401C,RippleUSDToken,transferFrom,require,fail to extract code fact,"    RippleUSDToken ?transferFrom ? ?require ['GEQ', 'sender', 'yoursold'] ? 5 ? []"
+22,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,transferFrom,require,1,"    ERC721A transferFrom ? ?require ['NEQ', 'from', '0'] ? ?0 ? []"
+22,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,transferFrom,require,related to if statement,"    ERC721A transferFrom ? ?require ['NEQ', 'to', '0'] ?0 ? []"
+22,0x2c95b6d77a86a3df3b56e565e6b1fbf8714647fd,ERC721A,transferFrom,event,Assembly Language,    ERC721A transferFrom ? ?event ? {Transfer} ?0 ? []
